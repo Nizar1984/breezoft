@@ -1,0 +1,187 @@
+.container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  background-color: rgb(168, 205, 246);
+  border-bottom: solid;
+  border-color: orangered;
+  color: rgb(10, 2, 116);
+}
+
+.head-name h1 {
+  font-size: 400%;
+  margin-top: 0px;
+  /* margin-left: 20px; */
+  margin-bottom: 0px;
+}
+
+.anch a {
+  color: darkblue;
+  padding-inline: 20px;
+
+  padding-bottom: 5px;
+
+  padding: 0px 20px 0px 25;
+}
+
+.anch {
+  text-align: right;
+  /* background-color: aqua; */
+  align-content: center;
+  /* margin-left:67%; */
+}
+.heading {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  padding: 2px;
+}
+.intr {
+  /* background-color: rgb(1, 1, 1); */
+  border-bottom: solid;
+  border-color: orangered;
+  color: rgb(3, 22, 149);
+}
+.heading h3 {
+  color: rgb(135, 4, 4);
+  /* padding-top: -50px; */
+}
+.head-name {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+
+  margin-left: 20px;
+}
+.vision {
+  display: flex;
+  margin-top: 5px;
+  border-top: solid;
+  background-color: rgb(239, 231, 219);
+}
+.vision .vision-content {
+  text-align: center;
+  align-content: center;
+  color: rgb(2, 2, 111);
+}
+
+.vision-content h2 {
+  font-size: 30px;
+}
+.vision-content p {
+  font-size: 21px;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 217, 182);
+}
+.welcome-cont {
+  text-align: center;
+  color: rgb(2, 2, 111);
+}
+.welcome-cont h2 {
+  font-size: 40px;
+}
+.welcome-cont p {
+  font-size: 20px;
+}
+.spacer {
+  width: 15%;
+}
+.why {
+  display: flex;
+  /* border-bottom: solid black;*/
+  background-color: beige;
+}
+.why-cont {
+  text-align: center;
+  color: rgb(2, 2, 111);
+}
+li {
+  list-style: none;
+}
+.request {
+  display: flex;
+  align-items: center;
+
+  background-color: rgb(240, 217, 182);
+}
+
+.request :first-child {
+  text-align: center;
+  color: red;
+}
+.request-image {
+  align-self: right;
+  border: solid;
+}
+.request-cont {
+  align-items: center;
+}
+footer {
+  background-color: rgb(2, 2, 67);
+  color: white;
+  text-align: center;
+}
+.head-name a:hover {
+  color: orangered;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline red;
+}
+.box {
+  position: relative;
+  border: solid red 5px;
+  font-size: 20px;
+  /* width: 300px;
+   height: 300px; */
+  height: auto;
+}
+.box1 {
+  background-color: rgba(135, 93, 227, 0.4);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  padding: 150px;
+  transform: translateX(-100%);
+  margin-top: 10px;
+  z-index: 1;
+  font-size: 30px;
+}
+.box2 {
+  background-color: rgba(115, 97, 231, 0.4);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  padding: 150px;
+  margin-top: 10px;
+  z-index: 2;
+  font-size: 30px;
+}
+.box3 {
+  position: absolute;
+  bottom: -540px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgb(180, 179, 179, 0.9);
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(241, 6, 26);
+
+  /* transform: translateY(50%); */
+  /* padding: 0px; */
+}
+.box3::after {
+  content: "Nisar";
+  background-color: darkblue;
+  color: white;
+  position: absolute;
+  top:0;
+  right:0
+}
+
