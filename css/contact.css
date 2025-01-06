@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background: linear-gradient(to bottom right, rgba(243, 150, 96, 0.438), rgb(90, 161, 72));
- 
+  grid-template-rows: 200px 40px 200px 40px 1fr 1fr;
 }
 .first-line {
     display: flex;
