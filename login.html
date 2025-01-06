@@ -136,6 +136,35 @@
         display: block;
       }
 
+      .warningMessage {
+      
+      background: linear-gradient(to bottom right, rgb(144, 179, 231), rgb(2, 3, 86));
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      border: solid 3px;
+      position: absolute;
+      top:0px;
+      bottom: 0px;
+      height: 100px;
+      margin: auto;
+      text-align: center;
+      justify-items: center;
+      display: block;
+
+    }
+
+    .hide{
+      display: none;
+    }
+    .visible {
+      display: block; /* Ensure it's part of the layout */
+      opacity: 1; /* Fully visible */
+    }
+    
+
+
+
     </style>
   </head>
   <body>
@@ -154,15 +183,32 @@
         <h2 class="headname">SmartDoc</h2>
         <h3 class="login">Sign-In</h3>
       </div>
+      <div class="warningMessage hide">
+       <p class="para"> Incorrect username or password. Please contact SmartDoc Customer care</p>
+      </div>
         
-    </div>
+    </form>
   </body>
   <script>
     const passwordField = document.getElementById("password");
     const togglePassword = document.getElementById("toggle-password");
 
     togglePassword.addEventListener("change", () => {
-        passwordField.type = togglePassword.checked ? "text" : "password";
+      passwordField.type = togglePassword.checked ? "text" : "password";
+      
     });
+    let loginbtn = document.querySelector(".btn");
+    let hidForm = document.querySelector(".warningMessage");
+
+    loginbtn.addEventListener('click', () =>{
+      event.preventDefault();
+      hidForm.classList.remove('hide');
+      hidForm.classList.add('visible');
+      
+      // login.style.backroundcolor = 'lightgreen';
+      
+
+    });
+
 </script>
 </html>
