@@ -1,7 +1,7 @@
 const moreDetails = document.querySelector('.details');
 const hideForm = document.querySelector('.more');
 const close = document.querySelector('.close');
-moreDetails.addEventListener('mouseover', function () {
+moreDetails.addEventListener('click', function () {
     hideForm.classList.remove('hidden');
 
 });
