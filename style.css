@@ -70,6 +70,7 @@
 
 .vision-content h2 {
   font-size: 30px;
+ 
 }
 .vision-content p {
   font-size: 21px;
@@ -184,4 +185,33 @@ footer {
   top:0;
   right:0
 }
+.vision-content{
+  position: relative;
+}
+.glass {
 
+  position: absolute;
+  top: 0px;
+  bottom:0px;
+  left : -7px;
+  right:0px; 
+  margin: auto;
+  border: solid 2px;
+  width:80%;
+  height:60%;
+  background: rgba(77, 2, 207, 0.2); /* Semi-transparent white */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(183, 91, 4, 0.9); /* Subtle shadow */
+}
+.vision--desc{
+ margin : 150px;
+}
+
+.glass--head{
+  display: block;
+  position:absolute;
+  top:0px;
+  left:0px;right=0px;
+  text-align: left;
+  
+}
