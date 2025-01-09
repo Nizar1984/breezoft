@@ -67,8 +67,9 @@
 .vision .vision-content {
   text-align: center;
   align-content: center;
-  color: rgb(103, 103, 210);
+  color: rgb(103, 210, 171);
   width: 100%;
+  
 }
 
 .vision-content h2 {
@@ -206,12 +207,14 @@ footer {
   background: rgba(0, 5, 10, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 0 40px 20px red; /* 4-sided red shadow */
+  box-shadow: 0 0 40px 20px rgb(0, 255, 55); /* 4-sided red shadow */
   border: 3px solid rgba(250, 246, 6, 0.978); /* Subtle shadow */
 }
 .vision--desc{
  position : absolute;
- top : 25%;
+ top : 30%;
+ padding: 20px;
+
 
 
 }
