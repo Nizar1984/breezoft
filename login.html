@@ -193,6 +193,8 @@
     const passwordField = document.getElementById("password");
     const togglePassword = document.getElementById("toggle-password");
 
+    const mainForm = document.querySelector('body');
+
     togglePassword.addEventListener("change", () => {
       passwordField.type = togglePassword.checked ? "text" : "password";
       
@@ -208,6 +210,15 @@
       // login.style.backroundcolor = 'lightgreen';
       
 
+    });
+    mainForm.addEventListener('keydown', (e)=>{
+      if (e.key==='Escape'){
+      event.preventDefault();
+      hidForm.classList.add('hide');
+      hidForm.classList.remove('visible');
+      console.log(`mainform clicked`);
+    }
+      
     });
 
 </script>
